@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.cdnfonts.com/css/averia-sans-libre" rel="stylesheet">
+                
+                
+</head>
+<body>
+   <form action="" autocomplete="on">
+    <center><h1>Job Application Form</h1></center>
+   <fieldset>
+    <legend>Personal Information</legend>
+    <table>
+        <tr>
+            <td><label for="">First Name*</label></td>
+            <td><input type="text" required
+                 name="First_name"
+                 placeholder="EX:pooja"
+                 size="20"
+                 minlength="3" />
+                  <p>Enter your Name</p>              
+                 <img id="valid" src="https://cdn2.vectorstock.com/i/1000x1000/49/86/green-check-mark-symbol-vector-11384986.jpg" alt=""> 
+            <img  id="invalid" src="https://thumbs.dreamstime.com/z/flat-raster-wrong-icon-symbol-isolated-white-background-168810889.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td><label for="">Last Name*</label></td>
+            <td><input type="text"  name="Last_name" placeholder="Ex:N"></td>
+        </tr>
+        <tr>
+            <td> <label for="">Date of Birth</label></td>
+            <td><input type="date" 
+                name="dob"></td>
+        </tr>
+        <tr>
+            <td><label for="">age</label></td>
+            <td><input type="number" placeholder="EX:10"></td>
+        </tr>
+       <tr>
+        <td> <label for="">Gender</label></td>
+        <td><input type="radio"name="gender"><label for="">Male</label>
+            <input type="radio" name="gender"><label for="">Female</label>
+            <input type="radio" name="gender"><label for="">Others</label>
+       </tr>
+       <tr>
+        <td><label for="">Profile Picture*</label></td>
+        <td> <label for=""><input type="file" ></td>
+       </tr>
+    </table>
+  </fieldset>
+  <fieldset>
+    <legend>Contact Information</legend>
+    <table>
+        <tr>
+            <td><label for="">Email*</label></td>
+            <td><input type="email" required name="Email"
+             placeholder="EX:pooja@gmail.com">
+             <p>Enter your email</p>
+             <img id="valid" src="https://cdn2.vectorstock.com/i/1000x1000/49/86/green-check-mark-symbol-vector-11384986.jpg" alt=""> 
+            <img  id="invalid" src="https://thumbs.dreamstime.com/z/flat-raster-wrong-icon-symbol-isolated-white-background-168810889.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td><label for="">Phone Number*</label></td>
+            <td><input type="text" required name="Phone no" placeholder="10-digit number"/>
+                <p>EnterthephoneNumber</p>
+            <img id="valid" src="https://cdn2.vectorstock.com/i/1000x1000/49/86/green-check-mark-symbol-vector-11384986.jpg" alt=""> 
+            <img  id="invalid" src="https://thumbs.dreamstime.com/z/flat-raster-wrong-icon-symbol-isolated-white-background-168810889.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td><label for="">Address</label></td>
+            <td><textarea name="Address" id="" cols="30" rows="3" placeholder="address of person"></textarea>
+           
+        </td>
+        </tr>
+        <tr>
+            <td><label for="">Country</label></td>
+            <td><select name="country" id=""><option value="">choose the option</option>
+                <option value="">India</option>
+                <option value="">USA</option>
+                <option value="">GERMARY</option></select></td>
+        </tr>
+    </table>
+  </fieldset>
+ <fieldset id="person">
+    <legend>Educatiuon Background</legend>
+    <table>
+        <tr>
+            <td><label for="">Highest Qualification</label></td>
+            <td><select name="Hidh qualifition" id="">
+                <option value="">choose the qualifition</option>
+                <option value="">Post Graguate</option>
+                <option value="">Graguate</option>0
+                <option value="">Intermediate</option>
+                <option value="">ssc</option></select></td>
+        </tr> 
+        <tr>
+            <td><label for="">Specialization</label></td>
+            <td><input type="text" required name="specl" placeholder="EX:CSE">
+                <p>Enter the Branch</p>
+            <img id="valid" src="https://cdn2.vectorstock.com/i/1000x1000/49/86/green-check-mark-symbol-vector-11384986.jpg" alt=""> 
+            <img  id="invalid" src="https://thumbs.dreamstime.com/z/flat-raster-wrong-icon-symbol-isolated-white-background-168810889.jpg" alt=""></td>
+        </tr> 
+        <tr>
+            <td><label for="">Year of Graguation</label></td>
+            <td><input type="number" required name="YOG" placeholder="EX:3">
+                <p>Enter the year</p>
+            <img id="valid" src="https://cdn2.vectorstock.com/i/1000x1000/49/86/green-check-mark-symbol-vector-11384986.jpg" alt=""> 
+            <img  id="invalid" src="https://thumbs.dreamstime.com/z/flat-raster-wrong-icon-symbol-isolated-white-background-168810889.jpg" alt=""></td>
+        </tr> 
+    </table>
+ </fieldset>
+ <fieldset>
+    <legend>Job Perferences</legend>
+    <table>
+        <tr>
+            <td><label for="">Perferred Role</label></td>
+            <td><input type="text" required name="Role" placeholder="EX:software developer"></td>
+        </tr> 
+        <tr>
+            <td><label for="">Expected Salary</label></td>
+            <td><input type="text" required name="ES" placeholder="EX:50000"></td>
+        </tr> 
+        <tr>
+            <td><label for="">Perferred Locations</label></td>
+           <td> <input type="checkbox">Bangalore
+            <input type="checkbox" >Delhi
+            <input type="checkbox" >Remote
+            <input type="checkbox" >Pune
+            <input type="checkbox" >Chennai</td>
+        </tr>
+        <tr>
+            <td><label for="">Willing to Rolocate?</label></td>
+            <td> <input type="checkbox"></td>
+        </tr>
+    </table>
+</fieldset>
+<fieldset>
+    <legend>Create Account</legend>
+    <table>
+        <tr>
+            <td><label for="">Password*</label></td>
+            <td><input type="password" minlength="6" placeholder="Min 6 characters" required></td>
+        </tr>
+        <tr>
+            <td><label for="">Confirm Password</label></td>
+           <td><input type="password" required name="CP" placeholder="******"></td>
+        </tr>
+    </table>
+</fieldset>
+<fieldset>
+    <legend>Resume</legend>
+    <label for="">Upload REsume(PDF only)*</label>
+    <input type="file" required>
+</fieldset>
+<fieldset>
+    <legend>Agreement</legend>
+    <input type="checkbox" required>I agree to the terms and conditions*
+    <br>
+    <input type="submit" value="Submit Application"> 
+    <input type="reset" value="Reset Forms">
+</fieldset>
+
+</form>
+</body>
+</html>
